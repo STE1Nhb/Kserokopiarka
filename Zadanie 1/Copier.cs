@@ -46,13 +46,13 @@ namespace ver1
                 }
                 else if (formatType == IDocument.FormatType.PDF)
                 {
-                    document = new ImageDocument("PDFScan" + ScanCounter);
+                    document = new PDFDocument("PDFScan" + ScanCounter);
                     Console.WriteLine(DateTime.Now.ToString() + " Scan : " + $"PDFScan" + ScanCounter + ".pdf");
                     ScanCounter++;
                 }
                 else if (formatType == IDocument.FormatType.TXT)
                 {
-                    document = new ImageDocument("TextScan" + ScanCounter);
+                    document = new TextDocument("TextScan" + ScanCounter);
                     Console.WriteLine(DateTime.Now.ToString() + " Scan : " + $"TextScan" + ScanCounter + ".txt");
                     ScanCounter++;
                 }
